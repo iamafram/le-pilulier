@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Le Pilulier</string>
+    
+    <string name="tiroir_ouverture">Ouvrir le tiroir de navigation</string>
+    <string name="tiroir_fermeture">Fermer le tiroir de navigation</string>
+</resources>

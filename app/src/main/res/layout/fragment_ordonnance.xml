@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Ordonnance"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMedicament"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner_round"
+                android:hint="Nom du medicament"
+                android:lines="4"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bDurée"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/corner_round"
+                android:padding="10dp"
+                android:text="Durée"
+                android:textAllCaps="false"
+                android:textColor="@color/bg"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvDurée"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Matin:  "
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbMatin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/white"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvMatinTemps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bMatinTemps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/corner_round"
+                    android:padding="10dp"
+                    android:text="Temps"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bg"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etMatinPosologie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner_round"
+                android:hint="Posologie"
+                android:lines="2"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Midi:  "
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbMidi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/white"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvMidiTemps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bMidiTemps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/corner_round"
+                    android:padding="10dp"
+                    android:text="Temps"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bg"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etMidiDosage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner_round"
+                android:hint="Posologie"
+                android:lines="2"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Soir:  "
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbSoir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/white"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvSoirTemps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bSoirTemps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/corner_round"
+                    android:padding="10dp"
+                    android:text="Temps"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bg"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etSoirPosologie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner_round"
+                android:hint="Posologie"
+                android:lines="2"
+                android:textColor="@color/bg"
+                android:textColorHint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bAnnuler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_round"
+                    android:padding="10dp"
+                    android:text="Annuler"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bg"
+                    android:textSize="25sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bAjout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_round"
+                    android:padding="10dp"
+                    android:text="Ajouter"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bg"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

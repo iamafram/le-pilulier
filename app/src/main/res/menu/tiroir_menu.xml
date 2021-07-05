@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Menu principal" />
+
+        <item
+            android:id="@+id/nav_matin"
+            android:title="Matin" />
+
+        <item
+            android:id="@+id/nav_midi"
+            android:title="Midi" />
+
+        <item
+            android:id="@+id/nav_soir"
+            android:title="Soir" />
+
+        <item
+            android:id="@+id/nav_journalDeBord"
+            android:title="JournalDeBord" />
+
+        <item
+            android:id="@+id/nav_medicament"
+            android:title="Médicament du moment" />
+
+        <item
+            android:id="@+id/nav_ordonnance"
+            android:title="Ordonnance" />
+    </group>
+
+</menu>

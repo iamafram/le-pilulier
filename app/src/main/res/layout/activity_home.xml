@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Menu principal"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bMatin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/corner_round"
+                    android:padding="10dp"
+                    android:text="Matin"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bg"
+                    android:textSize="40sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bMidi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/corner_round"
+                    android:padding="10dp"
+                    android:text=" Midi "
+                    android:textAllCaps="false"
+                    android:textColor="@color/bg"
+                    android:textSize="40sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bSoir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/corner_round"
+                    android:padding="10dp"
+                    android:text="Soir"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bg"
+                    android:textSize="40sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bJournalDeBord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/corner_round"
+                    android:padding="10dp"
+                    android:text="JournalDeBord"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bg"
+                    android:textSize="40sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bMedicament"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/corner_round"
+                    android:padding="10dp"
+                    android:text="Médicament du moment"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bg"
+                    android:textSize="40sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bOrdonnances"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/corner_round"
+                    android:padding="10dp"
+                    android:text="Ordonnances"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bg"
+                    android:textSize="40sp"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
